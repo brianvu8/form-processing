@@ -21,16 +21,38 @@
      
    <main class="wrapper">
  
-    <h2 class="subheader">An HTML/CSS/JS example by NAME HERE</h2>
+    <h2 class="subheader">An HTML/CSS/JS example by Brian Vu</h2>
     <div id="output">
       <p>The following is a demonstration of a form that can be filled out and when data is entered, the data can be seen on the page.</p>
       <p>Any form fields that have names with an underscore between significant words, such as <b>First_Name</b> 
         will be split into separate words, for example <b>First Name</b> upon submission.</p>  
     <form method="get" action="" class="main-form">
       <div>
+
         <label for="FirstName">First Name</label><br>
         <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required autofocus>
       </div>
+
+            <div>
+        <label for="LastName">Last Name</label><br>
+        <input type="text" name="Last_Name" id="LastName" placeholder="Last Name" required>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Would you like to join our mailing list?</legend>
+          <label>
+            <input type="radio" name="Mailing_list" value="Yes" required> yes<br>
+            <input type="radio" name="Mailing_list" value="no"> no 
+          </label>
+        </fieldset>
+      </div>
+
+      <div>
+        <label for="Phone">Phone</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
+      </div>
+
       <div>
         <input type="submit">
       </div>
@@ -38,7 +60,7 @@
   </div>
     <footer>
       <p><small>&copy; 2021-<span id="this-year"></span> by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+          Brian Vu, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
      </p>
